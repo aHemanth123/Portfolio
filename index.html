@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hemanth | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --primary: #38bdf8;
+      --secondary: #22c55e;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: linear-gradient(135deg, #020617, #0f172a); color: var(--text); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      position: fixed; top: 0; width: 100%; background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(10px); display: flex; justify-content: space-between;
+      align-items: center; padding: 16px 10%; z-index: 1000;
+    }
+    header h1 { font-size: 22px; font-weight: 600; color: var(--primary); }
+    nav a { margin-left: 24px; font-size: 15px; color: var(--muted); }
+
+    section { padding: 90px 10%; }
+    .section-title { font-size: 32px; margin-bottom: 40px; text-align: center; }
+    .section-title span { color: var(--primary); }
+
+    .hero {
+      min-height: 100vh; display: grid; grid-template-columns: 1.2fr 0.8fr;
+      align-items: center; padding: 120px 10% 60px; gap: 40px;
+    }
+    .hero h2 { font-size: 48px; }
+    .hero h2 span { color: var(--primary); }
+    .hero p { color: var(--muted); margin: 20px 0 30px; }
+
+    .btn {
+      padding: 12px 28px; border-radius: 30px; cursor: pointer; border: none;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #020617; font-weight: 500; margin: 5px;
+    }
+
+    .skills, .projects, .education, .experience, .certificates { display: grid; gap: 20px; }
+    .skills { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .skill, .project, .edu, .exp, .cert { background: var(--card); padding: 24px; border-radius: 16px; }
+    .skill h4, .project h4, .edu h4, .exp h4, .cert h4 { color: var(--primary); margin-bottom: 8px; }
+    .skill p, .project p, .edu p, .exp p, .cert p { color: var(--muted); font-size: 14px; }
+
+    footer { text-align: center; padding: 30px 10%; color: var(--muted); background: #020617; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Portfolio</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#connect">Connect</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Hi, I'm <span>Hemanth Sai Manikanta Appari</span></h2>
+    <p>Data Engineer | Data Analyst | Machine Learning Engineer</p>
+    <a href="#projects" class="btn">View My Work</a> 
+  </div>
+</section>
+
+<section id="about">
+  <h3 class="section-title">About <span>Me</span></h3>
+  <p style="max-width:800px;margin:0 auto;text-align:center;color:var(--muted)">
+    Hello! I’m <strong>Hemanth Sai Manikanta Appari</strong>, a Computer Science undergraduate specializing in 
+    <strong>Artificial Intelligence and Data Science</strong> at <strong>IIIT Kottayam</strong>. 
+    I am an aspiring <strong>Data Engineer and Data Analyst</strong> with hands-on experience in building 
+    scalable data pipelines, analytics dashboards, and machine learning solutions using 
+    <strong>PySpark, Airflow, Kafka, AWS, SQL, Python, and Power BI</strong>.
+    <br><br>
+    I have worked extensively in <strong>data analysis and machine learning</strong>, transforming raw data 
+    into meaningful insights through exploratory analysis, predictive modeling, and visualization. 
+    My projects span <strong>ETL pipeline development, business intelligence reporting, and ML-driven solutions</strong>, 
+    enabling data-driven decision-making and improved operational efficiency.
+  </p>
+</section>
+<!-- EDUCATION -->
+<section id="education">
+  <h3 class="section-title">My <span>Education</span></h3>
+  <div class="education">
+    <div class="edu">
+      <h4>Indian Institute of Information Technology Kottayam</h4>
+      <p>B.Tech in Computer Science Engineering (Artificial Intelligence and Data Science)</p>
+      <p>2022 – 2026 | CGPA: 8.4</p>
+    </div>
+    <div class="edu">
+      <h4>Aditya Educational Institution</h4>
+      <p>Higher Secondary Education</p>
+      <p>2020 – 2022 | Board Percentile: 95% | JEE Main Percentile: 95%</p>
+    </div>
+  </div>
+</section>  
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h3 class="section-title">Professional <span>Experience</span></h3>
+  <div class="experience">
+    <div class="exp">
+      <h4>THE RIGHT DOCTORS – Business Analyst Intern</h4>
+      <p>May 2025 – June 2025 </p>
+      <ul style="color: var(--muted); font-size: 14px; margin-top:8px;">
+        <li>Enhanced customer success and feature adoption tracking using Zoho CRM and WATI API for multi-channel outreach via LinkedIn and Email.</li>
+        <li>Contributed to a team-led research initiative on the Top 10 anti-hypertension drug brands in India, conducted detailed market analysis, and added relevant contacts to support business development and outreach efforts.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- PROJECTS -->
+<section id="projects">
+  <h3 class="section-title">My <span>Projects</span></h3>
+  <div style="text-align:center;margin-bottom:40px;">
+    <button class="btn" onclick="showProjects('analyst')">Data Analyst</button>
+    <button class="btn" onclick="showProjects('etl')">ETL / Data Engineering</button>
+    <button class="btn" onclick="showProjects('ml')">Machine Learning and AI</button>
+  </div>
+
+  <!-- Data Analyst Projects --> 
+  <div class="projects" id="analyst">
+    <div class="project">
+      <h4>Gold Price Analysis | Excel, Power BI</h4>
+      <p>Interactive Power BI reports to analyze gold price trends with comparative visuals (week-over-week, month-over-month, day-over-day), quarterly/monthly/daily metrics, and Waterfall charts for peak changes.</p>
+     
+       
+      <div>
+        <span class="badge">PowerBI</span>
+        <span class="badge">Excel</span>
+      </div>
+        <br>
+        <a href="https://github.com/aHemanth123/Gold_Price_predictor" target="_blank" class="btn">GitHub</a> 
+    </div>
+
+    <div class="project">
+      <h4>Interactive Sports Analytics & Medal Tracking | Excel, Power BI</h4>
+      <p>Olympic dashboard tracking 100+ athletes and 15+ countries, with visualizations for top medalists, dynamic tables, and strategic insights for Paris 2024 Olympics.</p>
+      
+      <div>
+        <span class="badge">PowerBI</span>
+        <span class="badge">Excel</span>
+      </div>
+      <br> 
+       <a href="https://github.com/aHemanth123/Olympics_Visulaization" target="_blank" class="btn">GitHub</a> 
+    </div>
+
+    <div class="project">
+      <h4>The Changing Landscape of Engineering Education | Excel, Power BI</h4>
+      <p>Developed an interactive Power BI report using historical JOSAA data to reveal national rank trends across IITs, NITs, and IIITs. Transformed raw CSVs into robust data models using Power Query and DAX for dynamic filtering by year, quota, gender, and institute. 
+      Uncovered actionable insights around seat allocation, gender-based intake, and round-wise closing ranks—critical for admission trend forecasting and policy analysis.</p>
+      <div>
+        <span class="badge">PowerBI</span>
+        <span class="badge">Excel</span>
+        <span class="badge">Data Analysis</span>
+      </div>
+        <br>
+       <a href="https://github.com/aHemanth123/The-Changing-Landscape-of-Engineering-Education-Insights-from-IITs-NITs-and-IIITs" target="_blank" class="btn">GitHub</a> 
+    </div>
+  </div>
+
+<!-- ETL / Data Engineering Projects -->
+<div class="projects" id="etl" style="display:none;">
+
+  <div class="project">
+    <h4>Real-Time YouTube Data Streaming and Prediction | Apache Kafka, Zookeeper, Apache Airflow, Python</h4>
+    <p>Architected and implemented an end-to-end real-time data ingestion pipeline using Apache Kafka for scalable message streaming and YouTube API integration, ensuring fault-tolerant and modular data capture. Orchestrated the ETL + ML workflow with Apache Airflow DAGs for hourly automated runs. Designed a predictive model using Scikit-learn to estimate video view counts from engagement metrics, demonstrating insights from complex streaming data.</p>
+    <div>
+      <span class="badge">Python</span>
+      <span class="badge">Kafka</span>
+      <span class="badge">Zookeeper</span>
+      <span class="badge">Airflow</span>
+      <span class="badge">ML</span>
+    </div>
+    <br>
+    <a href="https://github.com/aHemanth123/Building-Resilient-Data-Pipelines-using-Apache-Airflow-and-Python" target="_blank" class="btn">GitHub</a>
+  </div>
+
+  <div class="project">
+    <h4>Weather Data ETL Pipeline | Python, Airflow, OpenWeather API</h4>
+    <p>Automated weather data ingestion from OpenWeather API using Airflow DAGs with structured data staging and error handling. Converted unstructured JSON to CSV using Pandas, scheduled backup archiving with Bash Operator, and ensured pipeline resilience via modular Python code and Docker deployment, simulating cloud-native data lake behavior.</p>
+    <div>
+      <span class="badge">Python</span>
+      <span class="badge">Airflow</span>
+      <span class="badge">OpenWeather API</span>
+      <span class="badge">Docker</span>
+    </div>
+    <br>
+    <a href="https://github.com/aHemanth123/Automated-Weather-Data-ETL-with-Apache-Airflow" target="_blank" class="btn">GitHub</a>
+  </div>
+
+  <div class="project">
+    <h4>Data Processing and Analytics using ETL & Athena | Python, AWS</h4>
+    <p>End-to-end ETL pipeline on AWS S3 and Athena with raw data ingestion, schema definition, transformation, and Power BI visualization for actionable insights. Includes detailed architecture and documentation.</p>
+    <div>
+      <span class="badge">Python</span>
+      <span class="badge">AWS S3</span>
+      <span class="badge">Athena</span>
+      <span class="badge">Power BI</span>
+    </div>
+    <br>
+    <a href="https://github.com/aHemanth123/AWS_ETL_Pipeline_of-Washing_Machine" target="_blank" class="btn">GitHub</a>
+  </div>
+
+  <div class="project">
+    <h4>Big Data E-Commerce Analytics | PySpark, Databricks, SQL</h4>
+    <p>Scalable PySpark pipeline in Databricks processing 100K+ multi-source records. Unified customer/product/seller views, optimized joins, and developed models for CLV, sales funnel, and delivery delays. Reduced transformation latency by 30% via broadcast joins and partition tuning.</p>
+    <div>
+      <span class="badge">PySpark</span>
+      <span class="badge">Databricks</span>
+      <span class="badge">SQL</span>
+    </div>
+    <br>
+    <a href="https://github.com/aHemanth123/Olist_pyspark_Data_Analysis" target="_blank" class="btn">GitHub</a>
+  </div>
+
+</div>
+
+
+
+  <!-- Machine Learning / AI Projects -->
+<div class="projects" id="ml" style="display:none;">
+
+  <div class="project">
+    <h4>Bilingual Text Summarization  | Python, Keras, TensorFlow</h4>
+    <p>End-to-end bilingual summarization pipeline using mT5 (Telugu) and NLLB-200 (English) with semantic optimization. Evaluated summary quality using BERTScore (F1 ≈ 0.90) and ChrF (≈ 40) for cross-lingual coherence.</p>
+    <div>
+      <span class="badge">Python</span>
+      <span class="badge">Keras</span>
+      <span class="badge">TensorFlow</span>
+      <span class="badge">NLP</span>
+    </div>
+    <br>
+    <a href="https://github.com/aHemanth123/NLP_Telugu_English-Summarizer" target="_blank" class="btn">GitHub</a>
+  </div>
+
+  <div class="project">
+    <h4>Intelligent CSV Information Analyzer  | Python, Ollama, Streamlit</h4>
+    <p>LLM-powered CSV analysis tool using Ollama (LLaMA3) + LangChain for natural-language queries. Supports local schema parsing, semantic prompt construction, persistent chat history, and automated Pandas-based data retrieval.</p>
+    <div>
+      <span class="badge">Python</span>
+      <span class="badge">Streamlit</span>
+      <span class="badge">LLM</span> 
+    </div>
+    <br>
+    <a href="https://github.com/aHemanth123/CSV_Analyzer" target="_blank" class="btn">GitHub</a>
+  </div>
+
+  <div class="project">
+    <h4>Mushroom Edibility Classification  | Python, Streamlit, Docker, Kubernetes</h4>
+    <p>Engineered a classification pipeline achieving 100% accuracy on the Kaggle mushroom dataset. Containerized with Docker and deployed on Kubernetes (Minikube) simulating a production-ready ML environment. Implemented MLOps practices including model serialization, Docker image packaging, and orchestration via Kubernetes manifests.</p>
+    <div>
+      <span class="badge">Python</span>
+      <span class="badge">Streamlit</span>
+      <span class="badge">Docker</span>
+      <span class="badge">Kubernetes</span>
+      <span class="badge">ML</span>
+    </div>
+    <br>
+    <a href="https://github.com/aHemanth123/Mushroom_app" target="_blank" class="btn">GitHub</a>
+  </div>
+
+</div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h3 class="section-title">My <span>Skills</span></h3>
+  <div class="skills">
+    <div class="skill"><h4>Programming Languages</h4><p>C++, Python, SQL, HTML, CSS</p></div>
+    <div class="skill"><h4>Frameworks & Libraries</h4><p>Pandas, NumPy, Matplotlib, Seaborn, BeautifulSoup, Selenium, PyTorch</p></div>
+    <div class="skill"><h4>Big Data & Orchestration</h4><p>PySpark, Databricks, Airflow, Docker, Kubernetes</p></div>
+    <div class="skill"><h4>Business Intelligence</h4><p>Excel, Power BI, Power BI Service</p></div>
+    <div class="skill"><h4>Databases</h4><p>SQL Server, SSIS</p></div>
+    <div class="skill"><h4>Cloud Services</h4><p>AWS: EC2, S3, Glue, Crawler, EMR</p></div>
+    <div class="skill"><h4>Course Work</h4><p>DBMS, Operating Systems, Computer Networks</p></div>
+    <div class="skill"><h4>Other Skills</h4><p>Data Engineering, Data Analysis, Machine Learning</p></div>
+  </div>
+</section>
+
+<!-- CERTIFICATES --> 
+ <!-- CERTIFICATES -->
+<section id="certificates">
+  <h3 class="section-title">My <span>Certificates</span></h3>
+  <div class="certificates" style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+
+    <div class="cert" style="background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+      <h4 style="color: var(--primary); margin-bottom: 10px;">Google Business Intelligence – Google (Coursera)</h4>
+      <p style="color: #ffffff; font-size: 14px; margin-bottom: 10px;">
+        Certificate Overview - <a href="https://www.coursera.org/account/accomplishments/professional-cert/YN4PS5YBCD14" target="_blank" style="color: var(--primary); text-decoration: underline;">Link</a>
+      </p>
+      <ul style="color: #ffffff; font-size: 14px; margin-left: 20px;">
+        <li>Foundations of Business Intelligence  </li>
+        <li>The Path to Insights: Data Models and Pipelines   </li>
+        <li>Decisions, Decisions: Dashboards and Reports </li>
+      </ul>
+    </div>
+
+    <div class="cert" style="background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+      <h4 style="color: var(--primary); margin-bottom: 10px;">Google Data Analytics – Google (Coursera)</h4>
+      <ul style="color: #ffffff; font-size: 14px; margin-left: 20px;">
+        <li>Foundations of Data, Data, Everywhere - <a href="https://www.coursera.org/account/accomplishments/verify/T7BENFWS9GNK" target="_blank" style="color: var(--primary); text-decoration: underline;">Link</a></li>
+        <li>Ask Questions to Make Data-Driven Decisions - <a href="https://www.coursera.org/account/accomplishments/verify/EK6PHSYF9LSA" target="_blank" style="color: var(--primary); text-decoration: underline;">Link</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- CONNECT -->
+<section id="connect">
+  <h3 class="section-title">Connect <span>With Me</span></h3>
+  <p style="text-align:center;color:var(--muted)">
+    <a href="https://www.linkedin.com/in/hemanthsaimanikanta/" target="_blank" class="btn">LinkedIn</a> 
+  </p>
+  <p style="text-align:center;color:var(--muted); margin-top: 10px;"><br>
+    📞 Call or WhatsApp: <a href="tel:+918247523827">+91 8247523827</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Hemanth Sai Manikanta Appari</p>
+</footer>
+
+<script>
+  function showProjects(type) {
+    document.getElementById('analyst').style.display = 'none';
+    document.getElementById('etl').style.display = 'none';
+    document.getElementById('ml').style.display = 'none';
+    document.getElementById(type).style.display = 'grid';
+  }
+</script>
+
+</body>
+</html>
