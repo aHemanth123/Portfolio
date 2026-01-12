@@ -43,6 +43,30 @@
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: #020617; font-weight: 500; margin: 5px;
     }
+    /* Role-specific project buttons */
+.btn-analyst {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9); /* Blue – Analytics */
+  color: #020617;
+}
+
+.btn-etl {
+  background: linear-gradient(135deg, #85e8e8, #85e8e8);  
+  color: #020617;
+}
+
+.btn-ml {
+  background: linear-gradient(135deg, #a855f7, #ec4899); /* Purple/Pink – AI & ML */
+  color: #020617;
+}
+
+/* Optional hover polish */
+.btn-analyst:hover,
+.btn-etl:hover,
+.btn-ml:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
 
     .skills, .projects, .education, .experience, .certificates { display: grid; gap: 20px; }
     .skills { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
@@ -131,11 +155,12 @@
 <!-- PROJECTS -->
 <section id="projects">
   <h3 class="section-title">My <span>Projects</span></h3>
-  <div style="text-align:center;margin-bottom:40px;">
-    <button class="btn" onclick="showProjects('analyst')">Data Analyst</button>
-    <button class="btn" onclick="showProjects('etl')">ETL / Data Engineering</button>
-    <button class="btn" onclick="showProjects('ml')">Machine Learning and AI</button>
-  </div>
+   <div style="text-align:center;margin-bottom:40px;">
+  <button class="btn btn-analyst" onclick="showProjects('analyst')">Data Analyst</button>
+  <button class="btn btn-etl" onclick="showProjects('etl')">ETL / Data Engineering</button>
+  <button class="btn btn-ml" onclick="showProjects('ml')">Machine Learning & AI</button>
+</div>
+
 
   <!-- Data Analyst Projects --> 
   <div class="projects" id="analyst">
@@ -239,14 +264,31 @@
 
   <!-- Machine Learning / AI Projects -->
 <div class="projects" id="ml" style="display:none;">
+  <div class="project">
+  <h4>Autonomous Business Performance Analyst | Python, Ollama, CrewAI</h4>
+  <p>
+    Built an autonomous multi-agent business analytics system using CrewAI that ingests structured data,
+    detects trends and anomalies, and generates executive-level insights.
+    Designed specialized AI agents with explicit task-to-task context chaining to ensure reliable
+    collaboration and deterministic analytical workflows.
+  </p>
+  <div>
+    <span class="badge">Python</span>
+    <span class="badge">Ollama</span>
+    <span class="badge">CrewAI</span> 
+    <span class="badge">AI Agents</span>
+  </div>
+  <br> <a href="https://drive.google.com/file/d/1M2vPVTJIDmUuVJOSomwLYOu3BwDnLoDE/view" target="_blank" class="btn btn-ml">Doc</a>
+  <a href="https://github.com/aHemanth123/Autonomous-Business-Performance-Analyst-using-Multi-Agent-AI-CrewAI-" target="_blank" class="btn btn-ml">GitHub</a>
+</div>
 
   <div class="project">
     <h4>Bilingual Text Summarization  | Python, Keras, TensorFlow</h4>
     <p>End-to-end bilingual summarization pipeline using mT5 (Telugu) and NLLB-200 (English) with semantic optimization. Evaluated summary quality using BERTScore (F1 ≈ 0.90) and ChrF (≈ 40) for cross-lingual coherence.</p>
+    <p>Improvized code now with Langgraph for better user experience and understanding </p>
     <div>
-      <span class="badge">Python</span>
-      <span class="badge">Keras</span>
-      <span class="badge">TensorFlow</span>
+      <span class="badge">Python</span> 
+      <span class="badge">Langgraph</span>
       <span class="badge">NLP</span>
     </div>
     <br>
