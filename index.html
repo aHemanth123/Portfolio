@@ -58,6 +58,11 @@
   background: linear-gradient(135deg, #a855f7, #ec4899); /* Purple/Pink – AI & ML */
   color: #020617;
 }
+@media (max-width: 768px) {
+  .certificates {
+    grid-template-columns: 1fr !important;
+  }
+}
 
 /* Optional hover polish */
 .btn-analyst:hover,
@@ -337,12 +342,12 @@
     <div class="skill"><h4>Other Skills</h4><p>Data Engineering, Data Analysis, Machine Learning</p></div>
   </div>
 </section>
-
-<!-- CERTIFICATES --> 
+ 
  <!-- CERTIFICATES -->
 <section id="certificates">
-  <h3 class="section-title">My <span>Certificates</span></h3>
-  <div class="certificates" style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+  <h3 class="section-title">My <span>Certificates</span></h3> 
+  <div class="certificates" style="display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr);">
+
 
     <div class="cert" style="background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
       <h4 style="color: var(--primary); margin-bottom: 10px;">Google Business Intelligence – Google (Coursera)</h4>
@@ -363,6 +368,27 @@
         <li>Ask Questions to Make Data-Driven Decisions - <a href="https://www.coursera.org/account/accomplishments/verify/EK6PHSYF9LSA" target="_blank" style="color: var(--primary); text-decoration: underline;">Link</a></li>
       </ul>
     </div>
+
+
+    <div class="cert" style="background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+  <h4 style="color: var(--primary); margin-bottom: 10px;">
+    Azure Data Engineering – Udemy
+  </h4>
+  <p style="color: #ffffff; font-size: 14px; margin-bottom: 10px;">
+    Certificate Overview -
+    <a href="https://www.udemy.com/certificate/UC-8fd2d87d-dd7f-462e-8a53-de05f5e43ddd/" target="_blank"
+       style="color: var(--primary); text-decoration: underline;">
+      Link
+    </a>
+  </p>
+  <ul style="color: #ffffff; font-size: 14px; margin-left: 20px;">
+    <li>Azure Data Factory (ADF) pipelines and integration</li>
+    <li>Azure Databricks & PySpark for big data processing</li>
+    <li>Azure Synapse Analytics and data warehousing</li>
+    <li>End-to-end ETL pipelines on Azure</li>
+  </ul>
+</div>
+
 
   </div>
 </section>
